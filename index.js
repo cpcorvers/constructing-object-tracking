@@ -31,9 +31,9 @@ app.get('/example', (req, res) => {
   res.sendFile(__dirname + '/public/qrscanning.html');
 });
 
-app.get('/index', (req, res) => {
+app.get('/sketch', (req, res) => {
   res.setHeader('Content-Type', 'text/html');
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/public/sketch.html');
 });
 
 server.listen(port, hostname, () => {
